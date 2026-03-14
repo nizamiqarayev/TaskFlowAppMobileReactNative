@@ -9,4 +9,11 @@ interface TaskItemProps {
   onDelete: (id: string) => void;
 }
 
-export { Task, TaskItemProps };
+interface TaskContextType {
+  tasks: Task[];
+  addTask: (title: string) => void;
+  toggleTask: (id: string) => void;
+  deleteTask: (id: string) => void;
+}
+
+export { Task, TaskItemProps, TaskContextType };
