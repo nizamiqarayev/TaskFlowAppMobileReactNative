@@ -1,4 +1,4 @@
-import { useTaskContext } from "../context/TaskContext";
+import { useTaskContext } from "../src/context/TaskContext";
 import { useState } from "react";
 import {
   View,
@@ -9,7 +9,7 @@ import {
   StatusBar,
   StyleSheet,
 } from "react-native";
-import { TaskItem } from "../components/TaskItem";
+import { TaskItem } from "../src/components/TaskItem";
 
 function TaskScreen() {
   const { tasks, addTask, toggleTask, deleteTask } = useTaskContext();
